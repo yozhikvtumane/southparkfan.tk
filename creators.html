@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Creators | South Park Fans</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<meta name="description" content="Fan site of the South Park cartoon.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="wrapper">
+			<header class="header__main">
+				<header class="header__main_content clearfix">
+					<h2 class="site-title"><a href="index.html">South Park Fans</a></h2>
+					<h2 class="site-description">Follow your favourite cartoon!</h2>
+				</header>
+			</header>
+			<div class="main clearfix">
+				<aside class="main__secondary">
+					<section class="main__secondary_container">
+						<h3 class="main__secondary_container-title">Navigation</h3>
+						<nav>
+							<ul>
+								<li><a href="history.html">History of South Park</a></li>
+								<li class="main__secondary-dropdown">Main Characters &#x21e9;
+									<ul class="main__secondary-hidden" data-open="0">
+										<li><a href="eric.html">Eric Cartman</a></li>
+										<li><a href="kyle.html">Kyle Broflovski</a></li>
+										<li><a href="stan.html">Stan Marsh</a></li>
+										<li><a href="kenny.html">Kenny McCormick</a></li>
+									</ul>
+								</li>
+								<li><a href="episodes.html">Episode list</a></li>
+								<li><a href="videos.html">Videos</a></li>
+								<li><a href="pics.html">Wallpaper Gallery</a></li>
+								<li><a href="creators.html">About creators</a></li>
+							</ul>
+						</nav>
+						<h3 class="fb-page-header">Follow us on Facebook</h3>
+						<div class="fb-page" 
+						  data-href="https://www.facebook.com/southpark"
+						  data-adapt-container-width="true"
+						  data-hide-cover="false"
+						  data-show-facepile="false" 
+						  data-show-posts="false"
+						  style="display: block; width: 95%; margin: 0 auto; padding-bottom: 7px;">
+						</div>
+					</section>
+				</aside>
+				<div class="main__primary">
+					<article class="main__article">
+						<p></p>
+						<h1 class="center">
+							About Creators
+						</h1>
+						<p class="center">
+							<img src="img/parker.jpg" alt="South Park Fans Banner">
+						</p>
+						<h3 class="center">Trey Parker</h3>
+						<p><strong>Randolph Severn "Trey" Parker III (born October 19, 1969)</strong> is an American actor, animator, writer, director, producer, singer, and songwriter. He is known for co-creating South Park (1997–present) along with his creative partner Matt Stone, as well as co-writing and co-directing the Tony Award-winning musical The Book of Mormon (2011). Parker was interested in film and music as a child, and attended the University of Colorado, Boulder following high school, where he met Stone. The two collaborated on various short films, and starred in a feature-length musical, titled Cannibal! The Musical (1993).</p>
+
+<p>Parker and Stone moved to Los Angeles and wrote their second film, Orgazmo (1997). Before the premiere of the movie, South Park premiered on Comedy Central in August 1997. The duo, who possess full creative control of the show, have since produced music and video games based on the show, which continues to run. They worked on a feature film titled South Park: Bigger, Longer & Uncut (1999), which received critical acclaim by both critics and fans. Alongside Stone, he has also produced various feature films and television series, including Team America: World Police (2004). After several years of development, The Book of Mormon, a musical co-written by Parker, Stone, and composer Robert Lopez, premiered on Broadway and became immensely successful. In 2013, he and Stone established their own production studio, Important Studios.</p>
+
+<p>Parker has been the recipient of various awards over the course of his career, including five Primetime Emmy Awards for his work on South Park, as well as four Tony Awards and a Grammy Award for The Book of Mormon.</p>
+						<p class="center">
+							<img src="img/stone.jpg" alt="South Park Fans Banner">
+						</p>
+						<h3 class="center">Matt Stone</h3>
+						<p><strong>Matthew Richard "Matt" Stone (born May 26, 1971)</strong> is an American actor, animator, writer, director, producer, singer, and songwriter. He is known for co-creating South Park (1997–present) along with his creative partner Trey Parker, as well as co-writing the Tony Award-winning musical The Book of Mormon (2011). Stone was interested in film and music as a child, and attended the University of Colorado, Boulder following high school, where he met Parker. The two collaborated on various short films, and starred in a feature-length musical, titled Cannibal! The Musical (1993).</p>
+
+<p>Stone and Parker moved to Los Angeles and wrote their second film, Orgazmo (1997). Before the premiere of the movie, South Park premiered on Comedy Central in August 1997. The duo, who possess full creative control of the show, have since produced music and video games based on the show, which continues to run. They worked on a feature film titled South Park: Bigger, Longer & Uncut (1999), which received critical acclaim by both critics and fans. Alongside Parker, he has also produced various feature films and television series, including Team America: World Police (2004). After several years of development, The Book of Mormon, a musical co-written by Stone, Parker, and composer Robert Lopez, premiered on Broadway and became immensely successful. In 2013, he and Parker established their own production studio, Important Studios.</p><p>
+	
+	Stone has been the recipient of various awards over the course of his career, including five Primetime Emmy Awards for his work on South Park, as well as four Tony Awards and a Grammy Award for The Book of Mormon.
+		</p>				</article>
+				</div>
+			</div>
+			<footer class="clearfix">
+				<div class="footer__inner">
+					<span class="footer__inner_copyright">South Park Fans | 2016</span>
+					<a href="http://github.com/">Proudly hosted with Github Pages</a>
+				</div>
+			</footer>
+		</div>
+		<script>
+		$(document).ready(function() {
+			$(".main__secondary-hidden").data('open' , 0);
+			
+			$(".main__secondary-dropdown").click( function() {
+				var openVal = $(".main__secondary-hidden").data('open');
+				if (openVal == 0) {
+					$(".main__secondary-hidden").css({"display":"block"});
+					$(".main__secondary-hidden").data( 'open' , 1);
+				} else {
+					$(".main__secondary-hidden").css({"display":"none"});
+					$(".main__secondary-hidden").data( 'open' , 0);
+				}
+				
+			});
+				
+		});
+		</script>
+	</body>
+</html>

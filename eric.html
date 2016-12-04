@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Character profile: Eric Cartman | South Park Fans</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<meta name="description" content="Fan site of the South Park cartoon.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="wrapper">
+			<header class="header__main">
+				<header class="header__main_content clearfix">
+					<h2 class="site-title"><a href="index.html">South Park Fans</a></h2>
+					<h2 class="site-description">Follow your favourite cartoon!</h2>
+				</header>
+			</header>
+			<div class="main clearfix">
+				<aside class="main__secondary">
+					<section class="main__secondary_container">
+						<h3 class="main__secondary_container-title">Navigation</h3>
+						<nav>
+							<ul>
+								<li><a href="history.html">History of South Park</a></li>
+								<li class="main__secondary-dropdown">Main Characters &#x21e9;
+									<ul class="main__secondary-hidden">
+										<li><a href="eric.html">Eric Cartman</a></li>
+										<li><a href="kyle.html">Kyle Broflovski</a></li>
+										<li><a href="stan.html">Stan Marsh</a></li>
+										<li><a href="kenny.html">Kenny McCormick</a></li>
+									</ul>
+								</li>
+								<li><a href="episodes.html">Episode list</a></li>
+								<li><a href="videos.html">Videos</a></li>
+								<li><a href="pics.html">Wallpaper Gallery</a></li>
+								<li><a href="creators.html">About creators</a></li>
+							</ul>
+						</nav>
+						<h3 class="fb-page-header">Follow us on Facebook</h3>
+						<div class="fb-page" 
+						  data-href="https://www.facebook.com/southpark"
+						  data-adapt-container-width="true"
+						  data-hide-cover="false"
+						  data-show-facepile="false" 
+						  data-show-posts="false"
+						  style="display: block; width: 95%; margin: 0 auto; padding-bottom: 7px;">
+						</div>
+					</section>
+				</aside>
+				<div class="main__primary">
+					<article class="main__article">
+						<p></p>
+						<h1 class="center">
+							Character : Eric Theodore Cartman
+						</h1>
+						<img src="img/eric-banner.png" alt="South Park Fans Banner">
+						<p></p>
+						<aside class="additional">
+							<h3>Character information</h3>
+							<p class="center">Gender : Male</p>
+							<p class="center">Hair : Brown</p>
+							<p class="center">Age : 10</p>
+							<p class="center">Birthday : July 1</p>
+							<p class="center">Occupation : Student</p>
+							<p class="center">Grade : 4th Grade</p>
+							<p class="center">Religion : Roman Catholic</p>
+							<p class="center">Voiced by : Trey Parker</p>
+						</aside>
+						<p><strong>Eric Theodore Cartman</strong>, usually referred to as just Cartman, is one of the main characters, along with Stan Marsh, Kyle Broflovski, and Kenny McCormick. Cartman is sometimes the main antagonist of an episode, for example Trapper Keeper. None of the other three main children consider Cartman their friend and do not know why they started hanging out with him in the first place, however, he is usually Kyle's first choice when he breaks his friendship with Stan. In earlier episodes, Kenny was his best friend, however, in later seasons, Butters Stotch is usually depicted as such.</p>
+						<p>Cartman was the first one of the boys to be shown without his hat, as seen in "Merry Christmas Charlie Manson!". He also weighs 90 pounds, as revealed in "Weight Gain 4000".</p>
+						<h3>Background</h3>
+						<p>Concept and Creation
+						According to the creators, Trey Parker and Matt Stone, they thought it would be impossible to put a character like Archie Bunker on late-20th century television. But then they came up with the idea that it might be allowed if the character were an animated nine (formerly eight) year-old boy living in the mountain town of South Park, Colorado. Thus, Cartman was born.</p>
+						<p>Contrary to popular belief that Cartman's name is derived from German war-pilot Erich Hartmann (which would reflect his love of Hitler and the Nazis), Trey and Matt confirmed in an online interview that Cartman's name is based on someone with the surname "Carpman". Trey Parker and Matt Stone have repeatedly stated that Cartman is their ultimate favorite of all the characters in the show. Although Cartman is initially modeled after Archie Bunker, Toni Johnson-Woods, author of Blame Canada: South Park and Contemporary Culture, says that she believes Cartman also draws parallels to Jackie Gleason of The Honeymooners, and Fred Flintstone .</p>
+
+					</article>
+				</div>
+			</div>
+			<footer class="clearfix">
+				<div class="footer__inner">
+					<span class="footer__inner_copyright">South Park Fans | 2016</span>
+					<a href="http://github.com/">Proudly hosted with Github Pages</a>
+				</div>
+			</footer>
+		</div>
+		<script>
+		$(document).ready(function() {
+			$(".main__secondary-hidden").data('open' , 0);
+			
+			$(".main__secondary-dropdown").click( function() {
+				var openVal = $(".main__secondary-hidden").data('open');
+				if (openVal == 0) {
+					$(".main__secondary-hidden").css({"display":"block"});
+					$(".main__secondary-hidden").data( 'open' , 1);
+				} else {
+					$(".main__secondary-hidden").css({"display":"none"});
+					$(".main__secondary-hidden").data( 'open' , 0);
+				}
+				
+			});
+				
+		});
+		</script>
+	</body>
+</html>

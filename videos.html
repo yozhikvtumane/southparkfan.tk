@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Videos | South Park Fans</title>
+	<meta name="description" content="Fan site of the South Park cartoon.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="styles/videos.css">
+</head>
+<body>
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="wrapper clearfix">
+		<header class="header__main clearfix">
+			<header class="header__main_content">
+				<h2 class="site-title"><a href="index.html">South Park Fans</a></h2>
+				<h2 class="site-description">Follow your favourite cartoon!</h2>
+			</header>
+			<nav class="header__main_menu">
+				<ul>
+					<li><a href="history.html">History</a></li>|
+					<li><a href="pics.html">Gallery</a></li>|
+					<li><a href="episodes.html">Episodes</a></li>|
+					<li><a href="eric.html">Characters</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="videos-player">
+				<h1 class="center">South Park Videos</h1>
+				<div id="player"></div>
+				<h3>Animation</h3>
+				<p>
+				An example of a different type of animation used.
+				South Park was originally made out of construction paper, inspired by the animations of Terry Gilliam's animations for Monty Python's Flying Circus. This style was applied to the animated shorts as well as "Cartman Gets an Anal Probe" (though rewriting of this episode caused some scenes to be made using the technology of the rest of the series). Later episodes have been made on computers. The characters are made in CorelDRAW and animated using Maya. Some episodes feature pre-packaged explosions, live action video and lighting effects. The show is heavily criticized for its animation, but the quick way of making episodes allows a quick production time, with some episodes being made in as little as three days.</p>
+				<br />
+				<p>
+				Some episodes feature completely different animation. The episode "Make Love, Not Warcraft" was made in machinima to represent the boys playing World of Warcraft. The episode "Good Times with Weapons" also uses anime.</p>
+				<div class="additional">
+					<h3>Information about this page</h3>
+					<p>The video player is made with Youtube iFrame API<br /> For more information visit <a href="https://developers.google.com/youtube/iframe_api_reference">this page</a></p>
+				</div>
+		</div>
+		<div class="videos-list">
+
+			<ul>
+				<li data-video-id="UWPM66e8oOg">
+					<span class="list-item">
+						<img src="img/thumb1.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">This Isn't South Park</h3>
+					</span>
+				</li>
+				<li data-video-id="ZrU_tt4R3xY">
+					<span class="list-item">
+						<img src="img/thumb2.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">South Park Stick Of Truth Full Movie</h3>
+					</span>
+				</li>
+				<li data-video-id="TlqKFlU7YAs">
+					<span class="list-item">
+						<img src="img/thumb3.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">My Opponent is a LIAR</h3>
+					</span>
+				</li>
+				<li data-video-id="x1YQ9JubYhw">
+					<span class="list-item">
+						<img src="img/thumb4.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">Top 10 South Park Celebrity Impersonations</h3>
+					</span>
+				</li>
+				<li data-video-id="WgvTgV5EoGY">
+					<span class="list-item">
+						<img src="img/thumb5.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">South Park - Make Love, Not Warcraft</h3>
+					</span>
+				</li>
+				<li data-video-id="un7QiXsnF_Y">
+					<span class="list-item">
+						<img src="img/thumb6.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">South Park - Medicinal Fried </h3>
+					</span>
+				</li>
+				<li data-video-id="cbdkWpiyLVw">
+					<span class="list-item">
+						<img src="img/thumb7.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">107 South Park Facts Everyone Should Know!</h3>
+					</span>
+				</li>
+				<li data-video-id="LIteRy3hhrE">
+					<span class="list-item">
+						<img src="img/thumb8.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">I Can't Fix You</h3>
+					</span>
+				</li>
+				<li data-video-id="5YenrYYJ2HM">
+					<span class="list-item">
+						<img src="img/thumb9.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">South Park - "Oh, Jeez" - PROMO - It’s the President-Elect</h3>
+					</span>
+				</li>
+				<li data-video-id="YVhxcpItk_M">
+					<span class="list-item">
+						<img src="img/thumb10.jpg" alt="" class="item-thumb">
+						<h3 class="item-header">Never Gonna Give You Up</h3>
+					</span>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+	<script>
+
+	var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		 var player;
+		 function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+			videoId: 'UWPM66e8oOg'
+			});
+		  }
+		$( document ).ready( function () {
+			var bodyHeight = $(window).height();
+			var wrapperHeight = bodyHeight - 60;
+
+
+			$(".wrapper").css({ "height" : wrapperHeight, "margin-top" : 30});
+
+			$(window).resize(function(){
+				var bodyHeight = $(window).height();
+
+				var wrapperHeight = bodyHeight - 60;
+
+				$(".wrapper").css({ "height" : wrapperHeight,
+									"margin-top" : 30});
+
+			});
+
+			$('.videos-list li').on('click', function () {
+
+		    var url = $(this).attr('data-video-id');
+
+		    player.cueVideoById(url);
+
+});
+		});
+
+	</script>
+</body>
+</html>

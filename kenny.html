@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Character profile: Kenny McCormick | South Park Fans</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<meta name="description" content="Fan site of the South Park cartoon.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="wrapper">
+			<header class="header__main">
+				<header class="header__main_content clearfix">
+					<h2 class="site-title"><a href="index.html">South Park Fans</a></h2>
+					<h2 class="site-description">Follow your favourite cartoon!</h2>
+				</header>
+			</header>
+			<div class="main clearfix">
+				<aside class="main__secondary">
+					<section class="main__secondary_container">
+						<h3 class="main__secondary_container-title">Navigation</h3>
+						<nav>
+							<ul>
+								<li><a href="history.html">History of South Park</a></li>
+								<li class="main__secondary-dropdown">Main Characters &#x21e9;
+									<ul class="main__secondary-hidden">
+										<li><a href="eric.html">Eric Cartman</a></li>
+										<li><a href="kyle.html">Kyle Broflovski</a></li>
+										<li><a href="stan.html">Stan Marsh</a></li>
+										<li><a href="kenny.html">Kenny McCormick</a></li>
+									</ul>
+								</li>
+								<li><a href="episodes.html">Episode list</a></li>
+								<li><a href="videos.html">Videos</a></li>
+								<li><a href="pics.html">Wallpaper Gallery</a></li>
+								<li><a href="creators.html">About creators</a></li>
+							</ul>
+						</nav>
+						<h3 class="fb-page-header">Follow us on Facebook</h3>
+						<div class="fb-page" 
+						  data-href="https://www.facebook.com/southpark"
+						  data-adapt-container-width="true"
+						  data-hide-cover="false"
+						  data-show-facepile="false" 
+						  data-show-posts="false"
+						  style="display: block; width: 95%; margin: 0 auto; padding-bottom: 7px;">
+						</div>
+					</section>
+				</aside>
+				<div class="main__primary">
+					<article class="main__article">
+						<p></p>
+						<h1 class="center">
+							Character : Kenny McCormick
+						</h1>
+						<img src="img/kenny-banner.png" alt="South Park Fans Banner">
+						<p></p>
+						<aside class="additional">
+							<h3>Character information</h3>
+							<p class="center">Gender : Male</p>
+							<p class="center">Hair : Blond</p>
+							<p class="center">Age : 10</p>
+							<p class="center">Birthday : March 22</p>
+							<p class="center">Occupation : Student</p>
+							<p class="center">Grade : 4th Grade</p>
+							<p class="center">Religion : Roman Catholic</p>
+							<p class="center">Voiced by : Matt Stone muffled</p>
+						</aside>
+						<p><strong>Kenneth "Kenny" McCormick</strong> is one of South Park's main characters, along with Eric Cartman, Stan Marsh, and Kyle Broflovski. He first appeared in the short films both entitled The Spirit of Christmas.</p>
+						<p>Kenny is most famous for dying in almost every episode in the first five seasons of South Park. He is also easily recognizable for almost always wearing an orange parka (or just having his face hidden) that covers most of his face and muffles his speech. In the episode "Mysterion Rises" Kenny, who is revealed to be the superhero Mysterion, reveals that he has the power of immortality (in a sense) and that he just wakes up in his bed after having died. He is then upset that his friends never remember him dying, and even kills himself in front of everyone to prove himself.</p>
+						<p>The character was killed off the show in the Season Five episode, "Kenny Dies", but returned in the following season, at the end of "Red Sleigh Down" and has since been a regular character; however, he now only dies occasionally. In most of the episodes in the tenth and eleventh seasons, he tends to recede into the background, though this tendency seems to have ended with the Season Eleven finale. Throughout the tenth, twelfth, eighteenth and nineteenth seasons, Kenny did not die once. Kenny died three times in total in Season Thirteen, five times in Season Fourteen, once in Season Fifteen, and once in Season Sixteen.</p>
+						<h3>Background</h3>
+						<p>Like many of South Park 's characters, Kenny is based on a real person; in this case a childhood friend of Trey Parker's also named Kenny. In a 2000 interview Trey said that the real life Kenny was the poorest kid in the neighborhood and wore an orange parka that made it difficult for anyone to understand what he was saying. Trey also stated that real life Kenny would skip school from time to time causing the others to jokingly say he had died, and a few days later, he would join his classmates and attend school again.</p>
+					</article>
+				</div>
+			</div>
+			<footer class="clearfix">
+				<div class="footer__inner">
+					<span class="footer__inner_copyright">South Park Fans | 2016</span>
+					<a href="http://github.com/">Proudly hosted with Github Pages</a>
+				</div>
+			</footer>
+		</div>
+		<script>
+		$(document).ready(function() {
+			$(".main__secondary-hidden").data('open' , 0);
+			
+			$(".main__secondary-dropdown").click( function() {
+				var openVal = $(".main__secondary-hidden").data('open');
+				if (openVal == 0) {
+					$(".main__secondary-hidden").css({"display":"block"});
+					$(".main__secondary-hidden").data( 'open' , 1);
+				} else {
+					$(".main__secondary-hidden").css({"display":"none"});
+					$(".main__secondary-hidden").data( 'open' , 0);
+				}
+				
+			});
+				
+		});
+		</script>
+	</body>
+</html>

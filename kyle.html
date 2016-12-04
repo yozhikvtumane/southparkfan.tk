@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Character profile: Kyle Broflovski | South Park Fans</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<meta name="description" content="Fan site of the South Park cartoon.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="wrapper">
+			<header class="header__main">
+				<header class="header__main_content clearfix">
+					<h2 class="site-title"><a href="index.html">South Park Fans</a></h2>
+					<h2 class="site-description">Follow your favourite cartoon!</h2>
+				</header>
+			</header>
+			<div class="main clearfix">
+				<aside class="main__secondary">
+					<section class="main__secondary_container">
+						<h3 class="main__secondary_container-title">Navigation</h3>
+						<nav>
+							<ul>
+								<li><a href="history.html">History of South Park</a></li>
+								<li class="main__secondary-dropdown">Main Characters &#x21e9;
+									<ul class="main__secondary-hidden">
+										<li><a href="eric.html">Eric Cartman</a></li>
+										<li><a href="kyle.html">Kyle Broflovski</a></li>
+										<li><a href="stan.html">Stan Marsh</a></li>
+										<li><a href="kenny.html">Kenny McCormick</a></li>
+									</ul>
+								</li>
+								<li><a href="episodes.html">Episode list</a></li>
+								<li><a href="videos.html">Videos</a></li>
+								<li><a href="pics.html">Wallpaper Gallery</a></li>
+								<li><a href="creators.html">About creators</a></li>
+							</ul>
+						</nav>
+						<h3 class="fb-page-header">Follow us on Facebook</h3>
+						<div class="fb-page" 
+						  data-href="https://www.facebook.com/southpark"
+						  data-adapt-container-width="true"
+						  data-hide-cover="false"
+						  data-show-facepile="false" 
+						  data-show-posts="false"
+						  style="display: block; width: 95%; margin: 0 auto; padding-bottom: 7px;">
+						</div>
+					</section>
+				</aside>
+				<div class="main__primary">
+					<article class="main__article">
+						<p></p>
+						<h1 class="center">
+							Character : Kyle Broflovski
+						</h1>
+						<img src="img/kyle-banner.png" alt="South Park Fans Banner">
+						<p></p>
+						<aside class="additional">
+							<h3>Character information</h3>
+							<p class="center">Gender : Male</p>
+							<p class="center">Hair : Red</p>
+							<p class="center">Age : 10</p>
+							<p class="center">Birthday : May 26</p>
+							<p class="center">Occupation : Student</p>
+							<p class="center">Grade : 4th Grade</p>
+							<p class="center">Religion : Judaism</p>
+							<p class="center">Voiced by : Matt Stone</p>
+						</aside>
+						<p><strong>Kyle Broflovski</strong>, is one of South Park's main characters, along with Stan Marsh, Eric Cartman, and Kenny McCormick. Based on co-creator Matt Stone, Kyle is a member of the only Jewish family in South Park. He is often noted for this, as well as his intelligence.</p>
+						<h3>Background</h3>
+						<p>Background Religious Beliefs
+						Kyle is of the Jewish faith, but this detail is not officially revealed until "Mr. Hankey, the Christmas Poo", despite having been mentioned briefly in the second The Spirit of Christmas short (which pre-dates the television series), and in "Big Gay Al's Big Gay Boat Ride". It was also mentioned in "An Elephant Makes Love to a Pig". Cartman regularly makes derogatory remarks about the Jewish people, often directly in Kyle's presence specifically to aggravate him.</p>
+						<p>Kyle appears to have mixed feelings toward Judaism, and there is conflicting evidence as to the religiousness of his family - for example, while they dress similarly to many religious Jews (Gerald, for example, always wears a yarmulke), they apparently do not keep the Sabbath or follow very strict sexual lives (Sheila Stone, mother of Matt Stone, was herself a secular Sephardic Jew). Kyle's apparent indifference to religion may be part of his effort to fit in with his friends, who are mostly Roman Catholic. Kyle is more often defensive than proud of his faith, and though he regularly attends such functions as "Jew Scouts", he often has a poor grasp of the history, traditions and rituals of his religion. He's very naive, though he is seen to know more in later seasons. This could be the fault of his parents, who, in a misguided attempt to shelter their son, generally do not discuss with him the finer points of their religion.</p>
+
+					</article>
+				</div>
+			</div>
+			<footer class="clearfix">
+				<div class="footer__inner">
+					<span class="footer__inner_copyright">South Park Fans | 2016</span>
+					<a href="http://github.com/">Proudly hosted with Github Pages</a>
+				</div>
+			</footer>
+		</div>
+		<script>
+		$(document).ready(function() {
+			$(".main__secondary-hidden").data('open' , 0);
+			
+			$(".main__secondary-dropdown").click( function() {
+				var openVal = $(".main__secondary-hidden").data('open');
+				if (openVal == 0) {
+					$(".main__secondary-hidden").css({"display":"block"});
+					$(".main__secondary-hidden").data( 'open' , 1);
+				} else {
+					$(".main__secondary-hidden").css({"display":"none"});
+					$(".main__secondary-hidden").data( 'open' , 0);
+				}
+				
+			});
+				
+		});
+		</script>
+	</body>
+</html>

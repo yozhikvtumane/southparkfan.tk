@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> History of the series | South Park Fans</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<meta name="description" content="Fan site of the South Park cartoon.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="wrapper">
+			<header class="header__main">
+				<header class="header__main_content clearfix">
+					<h2 class="site-title"><a href="index.html">South Park Fans</a></h2>
+					<h2 class="site-description">Follow your favourite cartoon!</h2>
+				</header>
+			</header>
+			<div class="main clearfix">
+				<aside class="main__secondary">
+					<section class="main__secondary_container">
+						<h3 class="main__secondary_container-title">Navigation</h3>
+						<nav>
+							<ul>
+								<li><a href="history.html">History of South Park</a></li>
+								<li class="main__secondary-dropdown">Main Characters &#x21e9;
+									<ul class="main__secondary-hidden">
+										<li><a href="eric.html">Eric Cartman</a></li>
+										<li><a href="kyle.html">Kyle Broflovski</a></li>
+										<li><a href="stan.html">Stan Marsh</a></li>
+										<li><a href="kenny.html">Kenny McCormick</a></li>
+									</ul>
+								</li>
+								<li><a href="episodes.html">Episode list</a></li>
+								<li><a href="videos.html">Videos</a></li>
+								<li><a href="pics.html">Wallpaper Gallery</a></li>
+								<li><a href="creators.html">About creators</a></li>
+							</ul>
+						</nav>
+						<h3 class="fb-page-header">Follow us on Facebook</h3>
+						<div class="fb-page" 
+						  data-href="https://www.facebook.com/southpark"
+						  data-adapt-container-width="true"
+						  data-hide-cover="false"
+						  data-show-facepile="false" 
+						  data-show-posts="false"
+						  style="display: block; width: 95%; margin: 0 auto; padding-bottom: 7px;">
+						</div>
+					</section>
+				</aside>
+				<div class="main__primary">
+					<article class="main__article">
+						<p></p>
+						<h1 class="center">
+							History of South Park series
+						</h1>
+						<img src="img/history-banner.jpg" alt="South Park Fans Banner">
+						<p>The series' roots go as far back as 1992, when Trey Parker and Matt Stone were still at college. They created a short video called Jesus vs. Frosty. In 1995, Brian Graden, an executive of FOX, saw the film and commissioned Parker and Stone to make another. The next short video called "The Spirit of Christmas" resembled the animation style of the later series and the characters resembled their later selves. The video became increasingly popular and the creators went into talks with FOX. After this, they went to Comedy Central, who commissioned only 6 episodes for the first season, and it debuted on August 13, 1997. After the show proved itself to be a huge success, Comedy Central ordered 7 additional episodes, which Parker and Stone had to quickly produce.</p>
+						<p>The first season relied on shock-value, with rather weird and unusual plot lines such as the breeding of elephants and pigs and a giant mechanized version of Barbra Streisand. As the series progressed, the episodes tended to revolve mostly around the characters up until Season Seven. In this season there was a noticeable increase in satirical episodes, which remain the most popular to this day. However, in about Season Fifteen, there are mostly character-based episodes again. The series began to parody celebrities, such as Michael Jackson, Paris Hilton and Al Gore. It also parodied real life events such as homosexual marriages, global warming and use of the word 'nigger'. The creators also tend to parody (or pay homage to) television shows and films. The parodies also allow the creators to voice their opinions through episodes. The quick production on the show allows the program to respond quickly to current events, such as the capture of Saddam Hussein. The parodies of course, start controversies; in particular the episode "Trapped in the Closet" which mocked Scientology.</p>
+						<p>In September 2007, Parker and Stone signed a contract for three more seasons (after the current contract which runs up to the end of 2008 expires) which took the show up to 2011 with fifteen seasons and a total of 223 episodes at least.</p>
+						<p>In a news report on The New York Times website, a worker at Viacom stated that the show will continue to 2013.</p>
+						<p>The creators announced in the South Park website that South Park will continue up to it's 20th season in 2016.</p>
+						<p>The creators later announced that the series will be running until the twenty-third season.</p>
+					</article>
+				</div>
+			</div>
+			<footer class="clearfix">
+				<div class="footer__inner">
+					<span class="footer__inner_copyright">South Park Fans | 2016</span>
+					<a href="http://github.com/">Proudly hosted with Github Pages</a>
+				</div>
+			</footer>
+		</div>
+		<script>
+		$(document).ready(function() {
+			$(".main__secondary-hidden").data('open' , 0);
+			
+			$(".main__secondary-dropdown").click( function() {
+				var openVal = $(".main__secondary-hidden").data('open');
+				if (openVal == 0) {
+					$(".main__secondary-hidden").css({"display":"block"});
+					$(".main__secondary-hidden").data( 'open' , 1);
+				} else {
+					$(".main__secondary-hidden").css({"display":"none"});
+					$(".main__secondary-hidden").data( 'open' , 0);
+				}
+				
+			});
+				
+		});
+		</script>
+	</body>
+</html>
