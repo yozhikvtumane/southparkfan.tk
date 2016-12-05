@@ -14,16 +14,25 @@ function onYouTubeIframeAPIReady() {
 
 $( document ).ready( function () {
 	var bodyHeight = $(window).height();
+	var resX = $(window).width();
 	var wrapperHeight = bodyHeight - 60;
 
-	$(".wrapper").css({ "height" : wrapperHeight, "margin-top" : 30});
+	if(resX > 1000) {
+		$(".wrapper").css({ "height" : wrapperHeight, "margin-top" : 30});
+	}
 
 	$(window).resize(function(){
 		var bodyHeight = $(window).height();
+		var resX = $(window).width();
 		var wrapperHeight = bodyHeight - 60;
 
-		$(".wrapper").css({ "height" : wrapperHeight,
+		if(resX > 1000) {
+			$(".wrapper").css({ "height" : wrapperHeight,
 							"margin-top" : 30});
+		} else {
+			$(".wrapper").css({ "height" : "auto",
+							"margin-top" : 10});
+		}
 	});
 
 	$('.videos-list li').on('click', function () {
