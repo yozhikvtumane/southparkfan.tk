@@ -47,6 +47,7 @@ img {
 	clear:both;
 	visibility:hidden
 }
+
 .center {
 	text-align: center;
 }
@@ -64,9 +65,10 @@ img {
 	margin: 0 10px 10px 10px;
 }
 
-.wrapper {
+/*Main content*/
 
-		width: 75%;
+.wrapper {
+	width: 75%;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #eee;
@@ -107,6 +109,7 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 }
+
 .header__main_menu ul li:after {
 	content: "|";
 }
@@ -114,6 +117,7 @@ img {
 .header__main_menu ul li.last-item:after {
 	content: "";
 }
+
 .header__main_menu ul li a{
 	color: #333;
 	display: inline-block;
@@ -155,12 +159,12 @@ img {
 	float: left;
 	margin: 2%;
 	padding: 0.1em;
-	/*overflow-y: scroll;*/
 	background-color: #fff;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	border-bottom: 2px solid #ccc;
 }
+
 .videos-list ul li.header-mobile {
 	display: none;
 }
@@ -184,7 +188,6 @@ img {
     height: 79%;
     float: right;
     margin: 2%;
-    /*overflow-y: scroll;*/
     padding: 0.2em 2em 1em 2em;
     background-color: #fff;
 	-moz-border-radius: 5px;
@@ -211,14 +214,17 @@ img {
 		margin: 0;
 		padding: 0;
 	}
+
 	.wrapper {
 		width: 95%;
 		padding: 1em;
 	}
+
 	.header__main {
 		height: auto;
 		margin-bottom: 2em;
 	}
+
 	.header__main_content {
 		text-align: center;
 		float: none;
@@ -227,7 +233,6 @@ img {
 		padding: 0 0 0.6em 0;
 		margin: 0;
 		border-bottom: 2px solid #ccc;
-
 		margin-bottom: 2em;
 	}
 
@@ -237,9 +242,9 @@ img {
 		height: auto;
 		padding: 0;
 		margin: 0;
-
 		margin-bottom: 2em;
 	}
+
 	.header__main_menu ul li {
 		width: 40%;
 		float: none;
@@ -252,9 +257,11 @@ img {
 		border: 1px solid #CACACA;
 		border-radius: 5px;
 	}
+
 	.header__main_menu ul li:after {
 		content: "";
 	}
+
 	.videos-list {
 		display: block;
 		width: 100%;
@@ -262,13 +269,14 @@ img {
 		margin: 0;
 		height: 20em;
 		text-align: center;
-
 		margin-bottom: 2em;
 	}
+
 	.videos-list ul li.header-mobile {
 		display: block;
 		text-align: center;
 	}
+
 	.videos-player {
 		width: 100%;
 		margin: 0;
